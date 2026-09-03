@@ -31,13 +31,13 @@ Each query for this project aimed at investigating specific aspects of the data 
 To identify the highest-paying roles, I filtered data analyst positions by average yearly salary and location, focusing on remote jobs. This query highlights the high paying opportunities in the field.
 
 ```sql
-SELECT	
-	job_id,
-	job_title,
-	job_location,
-	job_schedule_type,
-	salary_year_avg,
-	job_posted_date,
+SELECT  
+    job_id,
+    job_title,
+    job_location,
+    job_schedule_type,
+    salary_year_avg,
+    job_posted_date,
     name AS company_name
 FROM
     job_postings_fact
@@ -53,6 +53,8 @@ LIMIT 10;
 
 ### 2. Skills for Top Paying Jobs
 To understand what skills are required for the top-paying jobs, I joined the job postings with the skills data, providing insights into what employers value for high-compensation roles.
+
+
 ```sql
 WITH top_paying_jobs AS (
     SELECT	
@@ -216,5 +218,6 @@ From the analysis, several general insights emerged:
 
 ### Closing Thoughts
 
-This project enhanced my SQL skills and provided valuable insights into the data analyst job market. The findings from the analysis serve as a guide to prioritizing skill development and job search efforts. Aspiring data analysts can better position themselves in a competitive job market by focusing on high-demand, high-salary skills. This exploration highlights the importance of continuous learning and adaptation to emerging trends in the field of data analytics.#   S Q L _ D a t a _ A n a l y s t _ P r o j e c t  
+This project enhanced my SQL skills and provided valuable insights into the data analyst job market. The findings from the analysis serve as a guide to prioritizing skill development and job search efforts. Aspiring data analysts can better position themselves in a competitive job market by focusing on high-demand, high-salary skills. This exploration highlights the importance of continuous learning and adaptation to emerging trends in the field of data analytics.#   S Q L _ D a t a _ A n a l y s t _ P r o j e c t 
+ 
  
